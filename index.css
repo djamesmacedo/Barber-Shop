@@ -1,0 +1,158 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+}
+.callaction {
+    height: 700px;
+    width: 1745px;
+    background-color: gray;
+    background-image: url(img/fundo-header1.png);
+    opacity: 1;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    
+}
+nav {
+    background-color: rgba(0, 0, 0, 0.801);
+}
+.list-nav {
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+.line-home, .line-sobre, .line-contato, .line-port {
+    padding: 15px 50px;
+    opacity: 0.8;
+    font-size: 20px;
+}
+.line-home:hover, .line-sobre:hover, .line-contato:hover, .line-port:hover {
+    transform: scale(1.15);
+    transition-duration: 300ms;
+    opacity: 1;
+
+}
+.line-home > a, .line-sobre > a, .line-contato > a, .line-port > a {
+    text-decoration: none;
+    color: white;
+
+}
+.img-logo {
+    height: 0px;
+    width: 96vw;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    
+}
+.img-tesoura {
+    animation: tesoura 2s;
+}
+.titulo-header {
+    margin-bottom: 0;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 150px;
+    text-align: center;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.479);
+}
+.text-header {
+    text-align: center;
+    font-size: 25px;
+    opacity: 0.6;
+}
+.btn-container {
+    width: 96vw;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    margin-top: 80px;
+    
+}
+.fale-btn, .now-btn {
+    margin: 0px 20px;
+    padding: 15px 130px;
+    border-radius: 3px;
+    font-size: 17px;
+    text-decoration: none;
+}
+.fale-btn {
+    background-color: black;
+    color: white;
+}
+.fale-btn:hover {
+    transform: scale(1.3);
+    transition-duration: 400ms;
+    
+}
+.now-btn {
+    border: 2px solid black;
+    background-color: white;
+    color: black;    
+}
+.now-btn:hover {
+    transform: scale(1.3); 
+    transition-duration: 400ms;
+}
+@keyframes tesoura {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.3);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+
+}
+@media only screen and (max-width: 375px) {
+    .callaction {
+        height: 660px;
+        width: 375px;       
+    }
+    .list-nav {
+        padding-left: 0px;
+    }
+    .line-home, .line-sobre, .line-contato, .line-port {
+        padding: 18px 10px;
+        font-size: 22px;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .img-tesoura {
+        height: 80px;
+    }   
+    .titulo-header {
+        font-size: 80px;
+    }   
+    .text-header {
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+    .btn-container {
+        width: 375px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        margin-top: 0;   
+    }
+    .fale-btn, .now-btn {
+        margin: 0px 10px;
+        padding: 5px 150px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .now-btn {
+        margin-top: 20px;
+    }
+    
+}
