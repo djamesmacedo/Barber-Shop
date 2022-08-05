@@ -6,8 +6,8 @@ body {
     margin: 0;
 }
 .callaction {
-    height: 700px;
-    width: 1745px;
+    height: 70vh;
+    width: 100vw;
     background-color: gray;
     background-image: url(img/fundo-header1.png);
     opacity: 1;
