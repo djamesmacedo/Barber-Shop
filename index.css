@@ -6,7 +6,7 @@ body {
     margin: 0;
 }
 .callaction {
-    height: 70vh;
+    height: 80vh;
     width: 100vw;
     background-color: gray;
     background-image: url(img/fundo-header1.png);
@@ -18,6 +18,9 @@ body {
 }
 nav {
     background-color: rgba(0, 0, 0, 0.801);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .list-nav {
     margin: 0;
@@ -40,6 +43,12 @@ nav {
     text-decoration: none;
     color: white;
 
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .img-logo {
     height: 0px;
@@ -69,7 +78,7 @@ nav {
     display: flex;
     justify-content: center;
     padding: 40px;
-    margin-top: 80px;
+    margin-top: 15px;
     
 }
 .fale-btn, .now-btn {
